@@ -10,24 +10,19 @@ Fecha: noviembre de 2026
 
 ---
 
+
 ## Tipo de proyecto
 
-**Proyecto integrador.** Se resuelve un problema concreto de un cliente real
-construyendo un producto de software funcional, acompañado de la documentación
-de ingeniería que respalda las decisiones tomadas.
+**Proyecto integrador.** Se resuelve un problema concreto de un cliente real construyendo un producto de software funcional, acompañado de la documentación de ingeniería que respalda las decisiones tomadas.
 
 No es una monografía: no se estudia el estado del arte de los sistemas de
-pedidos, sino que se construye una solución aplicada. Tampoco constituye una
-investigación, dado que no se responde a una pregunta teórica abierta, sino que
-se resuelve una problemática operativa conocida en un negocio familiar.
+pedidos, sino que se construye una solución aplicada. Tampoco constituye una investigación, dado que no se responde a una pregunta teórica abierta, sino que se resuelve una problemática operativa conocida en un negocio familiar.
 
 ---
 
 ## El punto de partida
 
-Este proyecto continúa el trabajo del módulo de Programación Web, en el que se
-construyó el frontend: una página funcional, publicada, con los datos del
-cliente en un archivo JSON.
+Este proyecto continúa el trabajo del módulo de Programación Web, en el que se construyó la interfaz: una página funcional y publicada, con los datos del cliente en un archivo JSON.
 
 Para completar el proyecto falta lo siguiente:
 
@@ -42,66 +37,45 @@ Para completar el proyecto falta lo siguiente:
 **ALESSA KIDS**, Av. Emilio Castro 4771, Ciudad Autónoma de Buenos Aires,
 Argentina. Teléfono: 1130923280.
 
-Es un negocio familiar atendido por dos personas. Funciona desde 2018 y comenzó
-el trámite de registro de la marca en 2021. Vende indumentaria para niñas y
-niños de temporadas de invierno y verano, tanto mediante venta directa como
-por encargo.
+Es un negocio familiar atendido por dos personas. Funciona desde 2018 y comenzó el trámite de registro de la marca en 2021. Vende indumentaria para niñas y niños con cambios de temporada de invierno y verano, tanto en venta directa como por encargo.
 
-**Cómo trabaja hoy:** Los pedidos llegan por WhatsApp, Facebook Marketplace y
-TikTok, y todos se redirigen a un número de WhatsApp exclusivo para ventas y
-envíos. Los encargos se registran y el stock se controla de forma manual a partir
-de las conversaciones. Actualmente no existe un registro unificado ni una vista
-centralizada que permita consultar las prendas disponibles, los pedidos
-pendientes y las entregas programadas para cada día. Tampoco existe una copia
-de respaldo centralizada de esta información.
+**Cómo trabaja hoy:** Los pedidos llegan por WhatsApp, Facebook Marketplace y TikTok, y todos se redirigen a un número de WhatsApp exclusivo para ventas y envíos. Los encargos se registran y el stock se controla de forma manual a partir de las conversaciones. Actualmente no existe un registro unificado ni una vista centralizada que permita consultar las prendas disponibles, los pedidos pendientes y las entregas programadas para cada día. Tampoco existe una copia de respaldo centralizada de esta información.
 
 **Fuente de esta información:** entrevista en línea con la propietaria,
-realizada el 15 de noviembre de 2026 por encontrarse en otro país. La
-información se registró en notas y fue validada con ella al día siguiente.
+realizada el 15 de noviembre de 2026 por encontrarse en otro país. La información se registró en notas y fue validada con ella al día siguiente.
 
 ---
 
 ## Formulación del problema
 
-El negocio de indumentaria para niñas y niños ALESSA KIDS vende por tres canales
-virtuales: Facebook Marketplace, WhatsApp y TikTok. Los pedidos se reciben en
-formatos diferentes y se redirigen a una cuenta exclusiva de WhatsApp, donde
-la información queda registrada dentro de cada conversación.
+El negocio de indumentaria para niñas y niños ALESSA KIDS vende por tres plataformas virtuales: Facebook Marketplace, WhatsApp y TikTok. Los pedidos se reciben en formatos diferentes y se redirigen a una cuenta exclusiva de WhatsApp dedicada a las consultas y la concreción de pedidos, donde la información queda registrada dentro de cada conversación.
 
-Este flujo operativo presenta dificultades documentadas durante la entrevista
-realizada con la propietaria:
+Este flujo operativo presenta dificultades documentadas durante la entrevista realizada con el propietario:
 
-**Imposibilidad de consulta.** Las plataformas utilizadas priorizan el uso desde
-dispositivos móviles y no ofrecen un catálogo unificado ni una consulta cómoda
-desde computadora. Para conocer los pedidos pendientes de una fecha determinada,
-el propietario debe revisar por separado las conversaciones de las aplicaciones,
-lo que consume tiempo durante la atención diaria.
+**Imposibilidad de consulta.** Las plataformas utilizadas priorizan el uso desde dispositivos móviles y no ofrecen un catálogo unificado ni una consulta cómoda desde computadora. Para conocer los pedidos pendientes de una fecha determinada, el propietario debe revisar por separado las conversaciones de las aplicaciones, lo que consume tiempo durante la atención diaria.
 
 **Ausencia de cantidad verificable.** La entrevista no permitió documentar
-cuántos pedidos se reciben por mes ni cuántos se confunden o pierden. Por ello,
-estas cifras deben obtenerse mediante el registro histórico y la medición de
-varias semanas antes de afirmar una pérdida cuantificada.
+cuántos pedidos se reciben por mes ni cuántos se confunden o pierden. Por ello, estas cifras deben obtenerse mediante el registro histórico y la medición de varias semanas antes de afirmar una pérdida cuantificada.
 
-**Ausencia de respaldo.** Los historiales de chat son el único medio central de
-almacenamiento. No existe una copia unificada: ante la pérdida del dispositivo,
-el borrado accidental de conversaciones o una falla de la cuenta, la información
-de los encargos podría perderse y tendría que reconstruirse contactando
-nuevamente a cada cliente.
+**Ausencia de respaldo.** Los historiales de chat son el único medio central de almacenamiento. No existe una copia unificada: ante la pérdida del dispositivo, el borrado accidental de conversaciones o una falla de la cuenta, la información de los encargos podría perderse y tendría que reconstruirse contactando nuevamente a cada cliente.
  
 ### Árbol de problemas
 
-```
-   EFECTOS      Riesgo de atender pedidos con datos incompletos
-                Posible pérdida de encargos o clientes
-                Tiempo dedicado a reconstruir información dispersa
-                          ↑
-   PROBLEMA     El registro de pedidos por encargo de ALESSA KIDS no permite
-   CENTRAL      consultar de forma confiable qué entregas corresponden a cada día
-                          ↑
-   CAUSAS       Los pedidos quedan distribuidos en varios canales
-                Las conversaciones no están organizadas por fecha de entrega
-                No existe una copia centralizada ni un registro único
-```
+| EFECTOS |
+|---|
+| Riesgo de atender pedidos con datos incompletos |
+| Posible pérdida de encargos o clientes |
+| Tiempo dedicado a reconstruir información dispersa y riesgo de perder credibilidad |
+
+| PROBLEMA CENTRAL |
+|---|
+| El registro de pedidos por encargo de ALESSA KIDS no permite consultar de forma confiable qué entregas corresponden a cada día |
+
+| CAUSAS |
+|---|
+| Los pedidos quedan distribuidos en varios canales |
+| Las conversaciones no están organizadas por fecha de entrega |
+| No existe una copia centralizada ni un registro único |
 
 ### Problema central
 
@@ -155,22 +129,10 @@ contactando nuevamente a los clientes.
 
 ## Factibilidad
 
-**Técnica.** El sistema requiere un servidor con PHP 8 y MySQL, que es la
-configuración estándar de cualquier hosting compartido. El desarrollo se hace
-con XAMPP en local, que funciona sin conexión. El frontend ya está construido y
-publicado. No se requiere ninguna tecnología que el equipo no haya usado antes.
+**Técnica.** El sistema web para la tienda de indumentaria infantil **ALESSA KIDS** se desarrollará utilizando tecnologías estándar de arquitectura cliente-servidor (HTML, CSS y JavaScript en el frontend; PHP y MySQL en el backend). Estas tecnologías son ampliamente compatibles con los servicios de alojamiento compartido y los navegadores actuales. Tanto el entorno de desarrollo como la operación diaria requieren equipos de gama básica o teléfonos inteligentes con conexión estable a internet, sin necesidad de adquirir hardware especializado ni licencias de software privativo.
 
-**Operativa.** El sistema lo van a usar el propietario y su esposa, ambos con
-teléfono con navegador y experiencia usando aplicaciones de mensajería y banca
-móvil. La operación diaria se reduce a registrar un pedido y consultar la lista
-del día, dos acciones que se resuelven en una pantalla cada una.
-
-*Riesgo identificado:* el registro depende de que cada pedido que llega por los
-tres canales se cargue en el sistema en el momento. Si los pedidos siguen
-quedando solo en los chats "para pasarlos después", el sistema no resuelve
-nada. Se mitiga dejando el registro accesible desde el celular, sin instalar
-nada, de modo que cargar un pedido tome menos tiempo que leer el mensaje que
-lo originó.
+**Operativa.** La solución está diseñada para integrarse de forma natural al flujo de venta actual del negocio y permitir registrar pedidos y consultar el catálogo desde el celular o el computador, sin tener que instalar aplicaciones adicionales. De este modo, registrar un pedido y verificar la disponibilidad de tallas y precios tomará menos tiempo que responder manualmente los mensajes que lo originaron.
+La interfaz administrativa prioriza acciones rápidas y claras para que el personal de atención pueda gestionar el catálogo infantil sin requerir capacitación técnica avanzada.
 
 **Económica.** El desarrollo se realiza como parte del módulo, sin costo para
 el cliente. La operación anual estimada es:
@@ -184,7 +146,7 @@ el cliente. La operación anual estimada es:
 El negocio puede cubrir el costo estimado de 620 bolivianos por año como gasto
 de operación informática, siempre que el monto sea confirmado al contratar el
 hosting y el dominio. La viabilidad económica depende también de que el uso
-del sistema evite pérdida de encargos y reduce el tiempo invertido en revisar
+del sistema evite la pérdida de encargos y reduzca el tiempo invertido en revisar
 los canales de mensajería.
 
 ## Alcances y límites

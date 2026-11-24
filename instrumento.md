@@ -1,100 +1,108 @@
-# Instrumento de recolección de información
 
-# Sistema de gestión de pedidos - ALESSA KIDS
+# Instrumento de recolección - ALESSA KIDS, indumentaria para niñas y niños
 
-**Proyecto:** Sistema web de registro y consulta de pedidos
-
-**Fecha de aplicación:** 18 de noviembre de 2026
-
-**Participantes:** Propietaria y encargada del local
+Proyecto: Sistema de gestión de pedidos
+Fecha de aplicación: 18 de noviembre de 2026
 
 ---
+
+
 
 ## Técnicas seleccionadas
 
 | Técnica | A quién | Qué se busca | Por qué esta técnica |
 |---|---|---|---|
-| Entrevista semiestructurada | Propietaria y encargada de la tienda | Conocer cómo llegan los pedidos, cómo se registran, cómo se consultan las entregas y cómo se conserva la información | Permite profundizar en el flujo real y en las excepciones operativas sin restringir las respuestas a opciones cerradas |
-| Observación directa | Atención en mostrador y consulta de mensajes de WhatsApp | Registrar cómo se recibe un pedido, qué datos se buscan y cuánto tiempo demora consultar una entrega o reconstruir información | Permite contrastar el proceso declarado con las acciones realizadas durante la atención cotidiana |
-| Revisión documental | Conversaciones de WhatsApp, cuadernos de encargos y respaldos existentes | Identificar los datos utilizados, la organización histórica y las dificultades para consultar entregas por fecha | Los registros reales permiten comprobar si existe un registro único, centralizado y recuperable |
+| Entrevista semiestructurada | Propietario o encargado de la tienda | El flujo completo de ventas, la gestión de compras a proveedores, el control de temporadas y la política de cambios | Permite profundizar en el proceso y conocer las excepciones operativas del rubro textil |
+| Observación directa | Mostrador de caja y atención en WhatsApp y redes (2 horas) | Cómo se verifica el stock real, cómo se responden consultas sobre talles y cómo se registran los encargos en la práctica | Lo que se hace durante los picos de atención presencial y digital no siempre coincide con lo planificado |
+| Revisión documental | Planillas de stock, cuadernos de reservas y tickets/vales de cambio | Volumen real de prendas, prendas con baja rotación e inconsistencias históricas de inventario | El dato ya existe en sus registros manuales o planillas anteriores; permite cuantificar fallas comunes |
 
-No se aplica encuesta porque el universo operativo está compuesto por dos personas. Una encuesta produciría pocas respuestas y no permitiría comprender las diferencias en el trabajo diario de cada participante.
+No se aplica encuesta: el universo son dos personas, y una encuesta a dos
+personas es una entrevista con menos información.
+
 
 ---
 
 ## Guía de entrevista
 
-### Apertura
 
-1. Cuéntenme cómo comienza un día habitual en ALESSA KIDS y qué información necesitan consultar al empezar la jornada.
-2. ¿Por cuáles canales reciben los pedidos por encargo y cómo llegan finalmente a WhatsApp?
-3. Explíqueme el proceso completo desde que llega un pedido hasta que se entrega al cliente.
+**Apertura**
 
-### Registro actual de pedidos
+1. Cuénteme cómo es un día habitual de ALESSA KIDS, desde la apertura de la tienda hasta que cierra.
 
-4. ¿Qué datos anotan para cada pedido y dónde los registran?
-5. ¿Qué datos consideran obligatorios para tomar un pedido por encargo?
-6. ¿Cómo registran la fecha de entrega y el estado actual de cada pedido?
-7. ¿Qué sucede si el pedido llega mientras atienden a otra persona o están ocupadas con tareas del local?
-8. ¿Quién puede registrar o modificar un pedido y qué pasa si esa persona no está?
+2. ¿Por qué canales reciben hoy el mayor volumen de consultas y ventas (local físico, WhatsApp, Instagram, catálogo digital)?
 
-### Consulta de entregas
+**El proceso actual**
 
-9. Muéstreme cómo buscan, hoy, los pedidos pendientes de una fecha determinada.
-10. ¿Qué dificultades encuentran al consultar pedidos pendientes, entregados o próximos?
-11. ¿Con qué frecuencia deben revisar conversaciones diferentes para confirmar los datos de un pedido?
+3. Muéstreme cómo anota un pedido y cómo lo concreta.
 
-### Respaldo y conservación de datos
+4. ¿Qué datos anota siempre? ¿Cuáles a veces?
 
-12. ¿Cómo conservan actualmente el historial de los pedidos por encargo?
-13. ¿Qué sucede si se pierde una conversación, se borra un mensaje o falla el teléfono o la cuenta de WhatsApp?
-14. ¿Con qué frecuencia realizan una copia de seguridad de los registros y dónde la guardan?
+5. ¿Cómo sabe, en la mañana, qué tiene que preparar ese día?
 
-### Uso y cierre
+6. ¿Qué pasa cuando la persona que anotó no está?
 
-15. ¿Desde qué dispositivos suelen consultar los pedidos: celular, computadora o ambos?
-16. ¿Qué operación debería ser más rápida en un sistema: registrar un pedido, consultar entregas por fecha o revisar los pedidos por estado?
-17. Si pudiera cambiar una sola cosa del proceso actual, ¿cuál sería?
-18. ¿Hay algún dato o situación relacionada con los pedidos que no hayamos considerado?
+
+**Los problemas**
+
+7. ¿Alguna vez un pedido salió mal? ¿Qué pasó?
+
+8. ¿Con qué frecuencia le parece que ocurre algo así?
+
+9. ¿Qué hace cuando eso pasa?
+
+**El contexto de uso**
+
+10. ¿Quién más tendría que poder registrar o consultar?
+
+11. ¿Usa el celular durante el trabajo? ¿Para qué?
+
+**Cierre**
+
+12. Si pudiera cambiar una sola cosa del proceso actual, ¿cuál sería?
+
+
+
+**Resultado de la entrevista**
+
+Encuestador: Ludwing Calani Mamani
+Entrevistado: Alain Calani Mamani
+Medio por el cual se realizó la entrevista: llamada de WhatsApp
+
+| N.º de pregunta | Respuesta |
+|---|---|
+| 1 | La apertura la realizan a las 9 am, pero las consultas por las redes ya empiezan a llegar y a las 10 empiezan a llegar los clientes que realizan sus compras. |
+| 2 | La mayor parte la reciben por WhatsApp porque la mayor parte del catálogo se publica por ese medio. |
+| 3 | El cliente consulta los precios por mayor, el envío y su costo. Una vez confirmados, el pedido se anota en un cuaderno junto con los datos del cliente. |
+| 4 | Se anotan la dirección y el código postal; también se consulta el pago que realiza el cliente. |
+| 5 | Primero revisan el cuaderno, donde están los pedidos; algunos son para envío y otros para retiro en la tienda. |
+| 6 | Se revisa siempre el cuaderno o el chat de WhatsApp, ya que la cuenta que usan para el negocio es institucional. |
+| 7 | No son muy estrictos con respecto a los envíos; hasta la fecha no se han presentado equivocaciones ni cancelaciones. |
+| 8 | Hasta el momento no ha sucedido ningún caso de ese tipo. |
+| 9 | No ha sucedido. Antes de realizar el envío, se efectúa el pago correspondiente y se toman fotos de los pedidos empaquetados como respaldo. |
+| 10 | Como el negocio lo atienden dos personas, solo ellas realizan los pedidos y hacen el seguimiento del envío. |
+| 11 | Sí, uso el celular cuando no estoy atendiendo a clientes que acuden a la tienda física. |
+| 12 | Manejar mis pedidos en un computador para no tener que llevar el cuaderno a todos lados. |
 
 ---
 
 ## Registro de la observación
 
-| Momento | Qué se observó | Qué se confirma o contradice |
+| Momento | Qué se observó | Qué contradice o confirma |
 |---|---|---|
-| 10:15 | Un pedido recibido por WhatsApp fue anotado en un cuaderno después de atender al cliente | Confirma que el registro no es inmediato ni centralizado |
-| 10:40 | Para verificar una entrega, se revisaron conversaciones y cuadernos por separado | Confirma la dificultad de consultar pedidos por fecha en una sola vista |
-| 11:05 | Se requirió confirmar nuevamente los datos del cliente y la prenda antes de entregar | Indica que faltan datos centralizados y actualizados |
-| 11:30 | El registro fue realizado desde el celular mientras se atendía a otra persona | Confirma la necesidad de una interfaz rápida y adaptable para dispositivos móviles |
+| 10:15 | Pedido recibido por teléfono y anotado en el cuaderno una hora después. | Contradice la afirmación de que siempre se anota en el cuaderno de inmediato. |
+| 10:40 | Para consultar qué se debe preparar, se revisan las hojas y se confirma la información mediante el chat del celular. | Confirma que la falta de un registro centralizado genera demoras al preparar los pedidos. |
+| 11:05 | Se anota un pedido sin confirmar el envío. | Contradice la afirmación de que siempre se confirma el pedido antes de agendarlo. |
+
 
 ---
 
-## Revisión documental
+## Resultados que alimentan el documento
 
-| Documento observado | Datos que contiene | Hallazgo relacionado con la propuesta |
-|---|---|---|
-| Conversaciones de WhatsApp | Cliente, prenda solicitada, fecha acordada y estado informado | La información está dispersa y depende de cada conversación |
-| Cuaderno de encargos | Pedidos escritos manualmente y entregas próximas | Permite comprobar registros, pero no ofrece filtros ni consulta centralizada |
-| Respaldo actual | Copias aisladas de conversaciones o registros manuales | No existe un mecanismo periódico y centralizado de exportación o recuperación |
-
----
-
-## Datos que se obtienen con este instrumento
-
-| Hallazgo esperado o confirmado | Relación con la propuesta |
+| Hallazgo | Dónde se usa |
 |---|---|
-| Los pedidos llegan por Facebook Marketplace, WhatsApp y TikTok y se concentran en una cuenta exclusiva de WhatsApp | Valida el registro centralizado de nuevos encargos |
-| Los datos de los pedidos están distribuidos entre conversaciones y anotaciones manuales | Sustenta la necesidad de una base de datos relacional |
-| Consultar las entregas de una fecha exige revisar varios registros | Sustenta el módulo de consulta y filtrado por fecha de entrega |
-| Las consultas se realizan desde el celular y, cuando corresponde, desde una computadora | Sustenta una interfaz web responsive sin instalación |
-| El historial depende de conversaciones y notas que pueden perderse | Sustenta el mecanismo periódico de exportación y respaldo |
-| El registro debe ser rápido para no retrasar la atención al cliente | Sustenta validaciones simples y una operación de carga breve |
-
----
-
-## Alcance del instrumento
-
-Las preguntas se limitan al problema definido en la propuesta: registrar pedidos por encargo, consultar entregas pendientes por fecha y estado, conservar el historial mediante respaldos y administrar el catálogo.
-
-No se plantea aquí el cobro, la facturación electrónica, el control exhaustivo de inventario, las notificaciones automáticas ni la atención de múltiples sucursales, ya que estos elementos están fuera del alcance del proyecto.
+| Desfase entre stock registrado y prendas físicas por anotaciones diferidas | Formulación del problema (causa principal de cancelaciones de ventas online) |
+| Verificación física presencial para confirmar talles y colores disponibles | Requerimiento funcional: filtro y búsqueda rápida multivariable (modelo, talle, color, stock) |
+| Conciliación manual de comprobantes de transferencia y múltiples medios de pago | Requerimiento funcional: integración/registro de métodos de cobro y conciliación rápida de pagos |
+| Redacción manual de datos de despacho y falta de seguimiento automatizado | Requerimiento funcional: generación de etiquetas de despacho y control de estados (pendiente, empaquetado, enviado) |
+| Uso del celular mientras se desplaza por el local y el depósito | Requerimiento no funcional: interfaz adaptable (responsive), rápida y optimizada para dispositivos móviles |
+| Demoras en la validación de compras para cambios de temporada o regalos | |

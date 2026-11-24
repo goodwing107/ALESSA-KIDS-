@@ -1,67 +1,14 @@
-<!-- ═══════════════════════════════════════════════════════════════════════
-     Marco teórico - documento de ejemplo
-
-     ⚠️ Es el proyecto de ejemplo del módulo, no el tuyo.
-
-     El marco teórico crece en dos días:
-       Día 7  estado del arte y matriz comparativa
-       Día 8  referencias bibliográficas y citación
-
-     Qué es y qué no es. El marco teórico no es un capítulo de definiciones
-     copiadas. No es explicar qué es una base de datos ni qué es PHP.
-
-     Es la respuesta a una pregunta concreta:
-        ¿qué se ha hecho antes para resolver este problema,
-         y por qué eso no me sirve tal cual?
-
-     Lo que no responde esa pregunta no va en el marco teórico.
-     ═══════════════════════════════════════════════════════════════════════ -->
 
 # Marco teórico
 
-## Sistema de gestión de pedidos para ALESSA KIDS Indumentaria para niñ@s
+## Sistema de gestión de pedidos para ALESSA KIDS, indumentaria para niñas y niños
 
 ---
 
-<!-- ── El error más frecuente en esta sección ─────────────────────────────────
-     El marco teórico de un principiante empieza así:
-
-        "Una base de datos es un conjunto de datos organizados..."
-        "PHP es un lenguaje de programación del lado del servidor..."
-
-     Eso es un glosario, y no aporta nada: quien lee el documento sabe qué
-     es una base de datos, y quien no lo sabe no va a leer el documento.
-
-     La prueba que lo detecta:
-        ¿Este párrafo cambia alguna decisión del proyecto?
-     Si no cambia ninguna, se quita.
-
-     Lo que sí va: qué soluciones existen ya para este problema, cómo
-     resuelven cada cosa, y por qué ninguna sirve tal cual para este cliente.
-     De ahí sale la justificación de construir algo propio.               -->
-
 ## Introducción
 
-El registro de encargos y la consulta de disponibilidad en comercios de indumentaria infantil que operan mediante redes sociales y mensajería suelen depender de anotaciones manuales y conversaciones dispersas. Este apartado evalúa alternativas existentes frente al contexto operativo de ALESSA KIDS (negocio familiar de dos personas con catálogo previo en JSON y ventas/encargos canalizados hacia WhatsApp y cuaderno) y fundamenta el desarrollo de un módulo web con base de datos relacional y respaldo periódico.
+El registro de encargos y la consulta de disponibilidad en comercios de indumentaria infantil que operan mediante redes sociales y mensajería suelen depender de anotaciones manuales y conversaciones dispersas en las plataformas virtuales donde se publican los productos. Este apartado evalúa las alternativas existentes frente al entorno operativo de ALESSA KIDS, un negocio familiar de dos personas con un catálogo previo en JSON y ventas y encargos canalizados a través de WhatsApp y un cuaderno. Asimismo, fundamenta el desarrollo de un módulo web con una base de datos relacional y respaldos periódicos.
 
-<!-- ── La matriz comparativa ────────────────────────────────────────────
-     Es el corazón del marco teórico y lo que lo distingue de un resumen de
-     Wikipedia.
-
-     Las columnas se eligen con los criterios del proyecto, no genéricas.
-     Aquí las columnas salen directamente de la factibilidad del Día 4 y de
-     lo observado el Día 6:
-       - costo, porque el cliente es un negocio pequeño
-       - funciona sin internet, porque la conexión del local se corta
-       - se usa desde el celular, porque se trabaja con las manos ocupadas
-       - consulta por fecha, porque es el problema central
-
-     Si una columna no sale de una condición del proyecto, sobra. Comparar
-     por "tiene interfaz gráfica" no aporta si eso no decide nada.
-
-     Además, la última fila es la solución propia,
-     comparada con las mismas columnas. Sin ella, la matriz describe el
-     mercado; con ella, argumenta una decisión.                           -->
 
 ## Estado del arte
 
@@ -72,19 +19,19 @@ El registro de encargos y la consulta de disponibilidad en comercios de indument
 | **Cuaderno de papel y chat** *(actual)* | Bs 0 | sí | no aplica | **no** |
 | **Planilla de cálculo compartida** | Bs 0 | no | difícil de usar | sí, con filtros |
 | **Software de gestión comercial** *(genérico)* | desde Bs 200/mes | según el producto | sí | sí, entre muchas funciones |
-| **Sistema a medida para panaderías** | desde USD 400 inicial | sí | sí | sí |
+| **Sistema a medida para comercios** | desde USD 400 iniciales | sí | sí | sí |
 | **Solución propuesta** | Bs 600/año | no *(requiere conexión)* | sí | sí |
 
 ### Análisis
 
-**El cuaderno** es gratuito, no requiere nada y funciona sin electricidad. Su
+**El cuaderno** es gratuito, no requiere electricidad ni conexión a internet. Su
 límite es exactamente el problema formulado: no permite consultar por fecha de
 entrega. Se mantiene como respaldo de contingencia.
 
 **La planilla compartida** resuelve la consulta y no cuesta nada, pero exige
 conexión permanente y su uso en un celular, en el mostrador y con prisa, es
 impracticable: la observación del 18 de noviembre registró que el registro de un
-pedido debe hacerse en menos de un minuto, entre atender a dos clientes.
+pedido debe hacerse en menos de un minuto mientras se atiende a dos clientes.
 
 **El software de gestión comercial** resuelve el problema y mucho más:
 inventario, facturación, proveedores. Ese "mucho más" es su desventaja aquí. El
@@ -98,46 +45,68 @@ según la estimación de la propietaria.
 ### Conclusión del estado del arte
 
 Ninguna alternativa disponible combina las cuatro condiciones que impone el
-caso: costo compatible con un negocio de tres personas, uso desde el celular en
-el mostrador, consulta por fecha de entrega, y alcance limitado a lo que el
+caso: costo compatible con un negocio de dos personas, uso desde el celular en
+el mostrador, consulta por fecha de entrega y alcance limitado a lo que el
 cliente necesita.
 
 La solución propuesta acepta una desventaja frente al cuaderno actual: requiere
 conexión a internet. Se mitiga manteniendo el cuaderno como respaldo de
 contingencia, y se declara como una limitación del proyecto.
 
-<!-- Ese último párrafo es el que da credibilidad a toda la sección. Una
-     comparación donde la solución propia gana en todo pierde
-     credibilidad. Reconocer una desventaja real y decir cómo se mitiga
-     demuestra que se miró en serio.                                       -->
 
-<!-- ── La metodología, que también va aquí ──────────────────────────────
-     El programa pide identificar "la metodología, métodos, técnicas y
-     herramientas de software". Va en el marco teórico porque es una decisión
-     que hay que fundamentar.
-
-     La regla: se elige una metodología y se dice por qué, con las
-     condiciones del proyecto. "Uso Scrum porque es ágil" no fundamenta nada.
-     "Uso un enfoque incremental porque tengo cuatro semanas y un solo
-     desarrollador, y Scrum completo exige roles que no existen aquí", sí. -->
 
 ## Metodología de desarrollo
+Se aplicará el modelo incremental de desarrollo de software, complementado con prácticas adaptadas de Personal Extreme Programming (PXP) para un desarrollador individual.
 
-Se adopta un **enfoque incremental**, con entregas verificables al final de
-cada semana, alineadas con los laboratorios del módulo.
+El sistema web de gestión de pedidos para ALESSA KIDS se construirá mediante incrementos funcionales, comenzando por la administración del catálogo y el registro de pedidos. En cada incremento se desarrollará, probará y corregirá una funcionalidad específica antes de pasar a la siguiente etapa.
 
-No se aplica Scrum en su forma completa: requiere roles (Product Owner, Scrum
-Master) y ceremonias que no tienen sentido en un proyecto de un solo
-desarrollador y cuatro semanas. Sí se toman dos de sus prácticas: el trabajo en
-incrementos que funcionan, y la revisión al cierre de cada uno.
+Este método permite reducir riesgos, detectar errores de manera temprana, incorporar cambios según las necesidades de la tienda y entregar versiones utilizables antes de finalizar el proyecto.
+
 
 | Herramienta | Uso | Por qué |
 |---|---|---|
-| Git y GitHub | control de versiones | ya en uso desde el módulo anterior |
-| XAMPP | entorno local | funciona sin internet, requisito del aula |
-| PHP 8 y MySQL | backend y datos | corren en hosting compartido de bajo costo |
-| Matriz de casos de prueba | verificación | trazable contra los requerimientos |
+| Git y GitHub | Control de versiones | Ya en uso desde el módulo anterior |
+| XAMPP | Entorno local | Funciona sin internet, requisito del aula |
+| PHP 8 y MySQL | Backend y datos | Funcionan en hosting compartido de bajo costo |
+| Matriz de casos de prueba | Verificación | Trazable con los requerimientos |
+
+---
+## Referencias bibliográficas
+
+Hernández Sampieri, R., Fernández Collado, C., y Baptista Lucio, P. (2014).
+*Metodología de la investigación* (6ª ed.). McGraw-Hill.
+
+IEEE. (1998). *IEEE Recommended Practice for Software Requirements
+Specifications* (IEEE Std 830-1998). Institute of Electrical and Electronics
+Engineers.
+
+ISO/IEC/IEEE. (2018). *Systems and software engineering - Life cycle processes
+- Requirements engineering* (ISO/IEC/IEEE 29148:2018). ISO.
+
+Nixon, R. (2024). *Learning PHP, MySQL & JavaScript* (7ª ed.). O'Reilly Media.
+
+Patton, J. (2014). *User Story Mapping: Discover the Whole Story, Build the
+Right Product*. O'Reilly Media
+
+### Fuentes no bibliográficas
+
+La información sobre el proceso actual de la tienda proviene de:
+
+- entrevista con la propietaria, 13 de noviembre de 2026
+- observación directa en el local, 18 de noviembre de 2026, 09:00 a 11:00
+- revisión del cuaderno de pedidos de marzo de 2026
+
+Estas fuentes se citan en el texto como comunicación personal y no se listan en
+las referencias bibliográficas, conforme a la norma APA.
+
+
+## Nota sobre integridad académica
+
+Este documento se apoya en fuentes externas, que están citadas donde
+corresponde. Las decisiones de diseño, la formulación del problema y el
+análisis del caso son propios y se fundamentan en la información recogida
+directamente del cliente.
 
 ---
 
-*(Este documento continúa el Día 8 con las referencias bibliográficas.)*
+*(El marco teórico está completo. El documento continúa el día 9 con los requerimientos.)*
